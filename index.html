@@ -2,12 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-    <title>Restaurantly Bootstrap Template - Index</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Restaurante Agualumbre: Coctelería, desayunos y comidas gourmet."
+    />
+    <meta
+      name="keywords"
+      content="restaurante, cocteles, desayunos, comidas, Agualumbre"
+    />
+    <meta name="author" content="Agualumbre" />
+    <title>AGUALUMBRE</title>
     <!-- Favicons -->
     <link href="img/inicio/logo_chedron.png" rel="icon" />
     <link href="img/inicio/logo_chedron.png" rel="apple-touch-icon" />
@@ -23,7 +28,10 @@
     <link href="vendor/aos/aos.css" rel="stylesheet" />
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
@@ -32,59 +40,41 @@
   </head>
 
   <body>
-    <!-- ======= Top Bar ======= -->
-    <div id="topbar" class="d-flex align-items-center fixed-top">
-      <div
-        class="container d-flex justify-content-center justify-content-md-between"
-      >
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-phone d-flex align-items-center"
-            ><span>+1 5589 55488 55</span></i
-          >
-          <i class="bi bi-clock d-flex align-items-center ms-4"
-            ><span> Mon-Sat: 11AM - 23PM</span></i
-          >
-        </div>
-
-        <div class="languages d-none d-md-flex align-items-center">
-          <ul>
-            <li>En</li>
-            <li><a href="#">De</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-cente">
+    <header id="header" class="fixed-top d-flex align-items-center">
       <div
         class="container-fluid container-xl d-flex align-items-center justify-content-lg-between"
       >
-        <!-- <h1 class="logo me-auto me-lg-0">
-          <a href="index.html">Restaurantly</a>
-        </h1> -->
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html" class="logo me-auto me-lg-0"
-          ><img src="img/inicio/logo_chedron.png" alt="" class="img-fluid"
-        /></a>
+        <!-- Logo -->
+        <a href="index.html" class="logo me-auto me-lg-0">
+          <img
+            src="img/inicio/logo_chedron.png"
+            alt="Agualumbre Logo"
+            class="img-fluid"
+          />
+        </a>
 
+        <!-- Navbar -->
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
             <li><a class="nav-link scrollto" href="#about">Acerca</a></li>
-            <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+            <li><a class="nav-link scrollto" href="#menu">Menú</a></li>
             <li><a class="nav-link scrollto" href="#specials">Espacios</a></li>
-            <li><a class="nav-link scrollto" href="#gallery">Galeria</a></li>
+            <li><a class="nav-link scrollto" href="#gallery">Galería</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
-        <!-- .navbar -->
+        <!-- End Navbar -->
+
+        <!-- Botón de reservación -->
         <a
           href="#book-a-table"
           class="book-a-table-btn scrollto d-none d-lg-flex"
-          >Haz una reservacion</a
         >
+          Haz una reservación
+        </a>
       </div>
     </header>
     <!-- End Header -->
@@ -96,11 +86,16 @@
         data-aos="zoom-in"
         data-aos-delay="100"
       >
-        <div class="row">
+        <div class="row justify-content-center">
+          <!-- Texto principal -->
           <div class="col-lg-12">
-            <h1>Bienvenido a <span>AguaLumbre</span></h1>
-            <h2>En Agualumbre, la tierra y el fuego dialogan en armonía.</h2>
+            <h1>Bienvenido a <span>AGUALUMBRE</span></h1>
+            <p class="lead">
+              En AGUALUMBRE, la tierra y el fuego dialogan en armonía.
+            </p>
           </div>
+
+          <!-- Video / logo -->
           <div
             class="col-lg-12 d-flex align-items-center justify-content-center position-relative"
             data-aos="zoom-in"
@@ -109,8 +104,9 @@
             <a
               href="https://www.youtube.com/watch?v=GlrxcuEDyF8"
               class="glightbox play-btn"
-              ><img src="img/inicio/logo_chedron.png" alt=""
-            /></a>
+              aria-label="Ver video de presentación"
+            >
+            </a>
           </div>
         </div>
       </div>
@@ -121,48 +117,78 @@
       <!-- ======= About Section ======= -->
       <section id="about" class="about">
         <div class="container" data-aos="fade-up">
-          <div class="row">
+          <div class="row align-items-center">
+            <!-- Imagen -->
             <div
               class="col-lg-6 order-1 order-lg-2"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <div class="about-img">
-                <img src="img/inicio/chef.webp" alt="" />
-              </div>
+              <figure class="about-img">
+                <img
+                  src="img/inicio/chef.webp"
+                  alt="Chef de Agualumbre cocinando"
+                  class="img-fluid rounded shadow-sm"
+                  loading="lazy"
+                />
+                <figcaption class="visually-hidden">
+                  La esencia de la cocina de Agualumbre
+                </figcaption>
+              </figure>
             </div>
+
+            <!-- Texto -->
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-              <h3>
-                Voluptatem dignissimos provident quasi corporis voluptates sit
-                assumenda.
-              </h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <ul>
+              <h2 class="section-title">¿Qué es <span>AGUALUMBRE</span>?</h2>
+              <ul class="about-list">
                 <li>
-                  <i class="bi bi-check-circle"></i> Ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat.
+                  <i class="bx bx-sparkles"></i>
+                  <p>
+                    AGUALUMBRE Cocina y Destilados no es solo un restaurante, es
+                    un viaje por los sabores de México. Tradición, fuego y
+                    pasión con un toque contemporáneo que transforma cada
+                    experiencia.
+                  </p>
                 </li>
                 <li>
-                  <i class="bi bi-check-circle"></i> Duis aute irure dolor in
-                  reprehenderit in voluptate velit.
+                  <i class="bx bx-fire-alt"></i>
+                  <p>
+                    Cocinamos con brasas, humo y comal, porque la esencia de
+                    nuestra cocina está en volver al origen, respetando cada
+                    ingrediente y exaltando lo mejor de la tierra, el mar y la
+                    huerta.
+                  </p>
                 </li>
                 <li>
-                  <i class="bi bi-check-circle"></i> Ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit in voluptate trideta storacalaperda mastiro
-                  dolore eu fugiat nulla pariatur.
+                  <i class="bx bx-leaf"></i>
+                  <p>
+                    Propuesta que combina lo ancestral con lo moderno: mole,
+                    mixiote, ceviches, cortes a la brasa y creaciones frescas
+                    que hacen de cada visita un momento especial.
+                  </p>
+                </li>
+                <li>
+                  <i class="bx bx-wine-alt"></i>
+                  <p>
+                    Nuestra barra de destilados ofrece mezcales, coctelería de
+                    autor y vinos seleccionados que elevan cada bocado.
+                  </p>
+                </li>
+                <li>
+                  <i class="bx bx-building-house"></i>
+                  <p>
+                    Un espacio cálido, contemporáneo y lleno de detalles
+                    artesanales que reflejan lo mejor de la cultura mexicana.
+                  </p>
+                </li>
+                <li>
+                  <i class="bx bx-handshake"></i>
+                  <p>
+                    En AGUALUMBRE celebramos la identidad de México con sabor,
+                    aroma y tradición.
+                  </p>
                 </li>
               </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum
-              </p>
             </div>
           </div>
         </div>
@@ -172,44 +198,50 @@
       <!-- ======= Why Us Section ======= -->
       <section id="why-us" class="why-us">
         <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Why Us</h2>
-            <p>Why Choose Our Restaurant</p>
-          </div>
+          <header class="section-title">
+            <h2>Porqué</h2>
+            <p>AGUALUMBRE</p>
+          </header>
 
           <div class="row">
-            <div class="col-lg-4">
+            <article class="col-lg-4">
               <div class="box" data-aos="zoom-in" data-aos-delay="100">
                 <span>01</span>
-                <h4>Lorem Ipsum</h4>
+                <h4>Concepto general</h4>
                 <p>
-                  Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et
-                  consectetur ducimus vero placeat
+                  Un espacio de cocina mexicana contemporánea, donde tradición e
+                  innovación se fusionan. No es solo un lugar para comer, sino
+                  una propuesta que reinterpreta sabores de distintas regiones
+                  con técnicas modernas y presentaciones cuidadas.
                 </p>
               </div>
-            </div>
+            </article>
 
-            <div class="col-lg-4 mt-4 mt-lg-0">
+            <article class="col-lg-4 mt-4 mt-lg-0">
               <div class="box" data-aos="zoom-in" data-aos-delay="200">
                 <span>02</span>
-                <h4>Repellat Nihil</h4>
+                <h4>Filosofía culinaria</h4>
                 <p>
-                  Dolorem est fugiat occaecati voluptate velit esse. Dicta
-                  veritatis dolor quod et vel dire leno para dest
+                  Basada en el uso de productos frescos y locales, con atención
+                  a la temporada de cada ingrediente. Se emplean métodos de
+                  cocción con brasas, humo y comal que resaltan los sabores
+                  auténticos de la cocina mexicana.
                 </p>
               </div>
-            </div>
+            </article>
 
-            <div class="col-lg-4 mt-4 mt-lg-0">
+            <article class="col-lg-4 mt-4 mt-lg-0">
               <div class="box" data-aos="zoom-in" data-aos-delay="300">
                 <span>03</span>
-                <h4>Ad ad velit qui</h4>
+                <h4>Bebidas y destilados</h4>
                 <p>
-                  Molestiae officiis omnis illo asperiores. Aut doloribus vitae
-                  sunt debitis quo vel nam quis
+                  La barra de destilados, especialmente el mezcal, es uno de los
+                  puntos fuertes. Se ofrece en distintas variedades y maridajes,
+                  junto a cócteles de autor con ingredientes mexicanos, además
+                  de una cuidada selección de vinos y cervezas.
                 </p>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -219,11 +251,11 @@
       <section id="menu" class="menu section-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Menu</h2>
-            <!-- <p>Check Our Tasty Menu</p> -->
+            <h2>Menú</h2>
           </div>
 
           <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <!-- Tabs -->
             <div class="col-lg-3">
               <ul class="nav nav-tabs flex-column">
                 <li class="nav-item">
@@ -236,795 +268,449 @@
                     class="nav-link active show"
                     data-bs-toggle="tab"
                     href="#tab-2"
-                    >Comida/Cena</a
+                    >Comida / Cena</a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" data-bs-toggle="tab" href="#tab-3"
-                    >Coctleria</a
+                    >Coctelería</a
                   >
                 </li>
               </ul>
             </div>
+
+            <!-- Content -->
             <div class="col-lg-9 mt-4 mt-lg-0">
               <div class="tab-content">
+                <!-- ==================== DESAYUNOS ==================== -->
                 <div class="tab-pane" id="tab-1">
-                  <div class="row">
-                    <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3></h3>
-                      <div class="row" data-aos="fade-up" data-aos-delay="100">
-                        <div
-                          class="col-lg-12 d-flex justify-content-center menu-block"
-                        >
-                          <ul id="menu-flters-desayunos" class="menu-filters">
-                            <li data-filter="*">TODO</li>
-                            <li data-filter=".filter-Cafes">CAFES</li>
-                            <li data-filter=".filter-Infuciones">
-                              BEBIDAS E INFUCIONES
-                            </li>
-                            <li data-filter=".filter-Pan">PAN</li>
-                            <li data-filter=".filter-Frutas">FRUTAS Y AVENA</li>
-                            <li data-filter=".filter-Jugos">
-                              JUGOS Y SMOOTHIES
-                            </li>
-                            <li data-filter=".filter-Chilaquiles">
-                              CHILAQUILES
-                            </li>
-                            <li data-filter=".filter-Omelettes">OMELETTES</li>
-                            <li data-filter=".filter-Extras">EXTRAS</li>
-                          </ul>
-                        </div>
+                  <ul
+                    id="menu-flters-desayunos"
+                    class="menu-filters d-flex justify-content-center"
+                  >
+                    <li data-filter=".filter-Cafes">Cafés</li>
+                    <li data-filter=".filter-Infusiones">
+                      Bebidas e Infusiones
+                    </li>
+                    <li data-filter=".filter-Pan">Pan</li>
+                    <li data-filter=".filter-Frutas">Frutas y Avena</li>
+                    <li data-filter=".filter-Jugos">Jugos y Smoothies</li>
+                    <li data-filter=".filter-Chilaquiles">Chilaquiles</li>
+                    <li data-filter=".filter-Omelettes">Omelettes</li>
+                    <li data-filter=".filter-Extras">Extras</li>
+                  </ul>
+
+                  <div class="row menu-container" id="menu-desayunos">
+                    <!-- CAFÉS -->
+                    <div class="col-lg-6 menu-item filter-Cafes">
+                      <div class="menu-content">
+                        <a href="#">Espresso (50 ml)</a><span>$65</span>
                       </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Cafes">
+                      <div class="menu-content">
+                        <a href="#">Americano (150 ml)</a><span>$65</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Cafes">
+                      <div class="menu-content">
+                        <a href="#">Espresso Doble (100 ml)</a><span>$75</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Cafes">
+                      <div class="menu-content">
+                        <a href="#">Latte / Capuccino (150 ml)</a
+                        ><span>$75</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Cafes">
+                      <div class="menu-content">
+                        <a href="#">Lechero (360 ml)</a><span>$65</span>
+                      </div>
+                    </div>
 
-                      <div class="row menu-container" id="menu-desayunos">
-                        <hr />
-                        <!-- ================= CAFÉS ================= -->
-                        <div class="col-lg-6 menu-item filter-Cafes">
-                          <img
-                            src="assets/img/menu/espresso.jpg"
-                            class="menu-img"
-                            alt="Espresso"
-                          />
-                          <div class="menu-content">
-                            <a href="#">ESPRESSO (50 ml)</a><span>$65</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Cafes">
-                          <img
-                            src="assets/img/menu/americano.jpg"
-                            class="menu-img"
-                            alt="Americano"
-                          />
-                          <div class="menu-content">
-                            <a href="#">AMERICANO (150 ml)</a><span>$65</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Cafes">
-                          <img
-                            src="assets/img/menu/espresso-doble.jpg"
-                            class="menu-img"
-                            alt="Espresso Doble"
-                          />
-                          <div class="menu-content">
-                            <a href="#">ESPRESSO DOBLE (100 ml)</a
-                            ><span>$75</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Cafes">
-                          <img
-                            src="assets/img/menu/latte.jpg"
-                            class="menu-img"
-                            alt="Latte / Capuccino"
-                          />
-                          <div class="menu-content">
-                            <a href="#">LATTE / CAPUCCINO (150 ml)</a
-                            ><span>$75</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Cafes">
-                          <img
-                            src="assets/img/menu/lechero.jpg"
-                            class="menu-img"
-                            alt="Lechero"
-                          />
-                          <div class="menu-content">
-                            <a href="#">LECHERO (360 ml)</a><span>$65</span>
-                          </div>
-                        </div>
+                    <!-- BEBIDAS E INFUSIONES -->
+                    <div class="col-lg-6 menu-item filter-Infusiones">
+                      <div class="menu-content">
+                        <a href="#">Atolito de Amaranto y Piloncillo (350 ml)</a
+                        ><span>$77</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Infusiones">
+                      <div class="menu-content">
+                        <a href="#">Chocolate de Agua o Leche (350 ml)</a
+                        ><span>$110</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Infusiones">
+                      <div class="menu-content">
+                        <a href="#">Infusión de Poleo (300 ml)</a
+                        ><span>$65</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Infusiones">
+                      <div class="menu-content">
+                        <a href="#">Infusiones Herbales (300 ml)</a
+                        ><span>$75</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Infusiones">
+                      <div class="menu-content">
+                        <a href="#">Matcha Latte (150 ml)</a><span>$85</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Infusiones">
+                      <div class="menu-content">
+                        <a href="#">Taro Latte (150 ml)</a><span>$85</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Infusiones">
+                      <div class="menu-content">
+                        <a href="#">Chai Latte (150 ml)</a><span>$85</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Infusiones">
+                      <div class="menu-content">
+                        <a href="#">Kombucha (475 ml)</a><span>$100</span>
+                      </div>
+                    </div>
 
-                        <!-- ================= BEBIDAS E INFUSIONES ================= -->
-                        <div class="col-lg-6 menu-item filter-Infuciones">
-                          <img
-                            src="assets/img/menu/atolito.jpg"
-                            class="menu-img"
-                            alt="Atolito"
-                          />
-                          <div class="menu-content">
-                            <a href="#"
-                              >ATOLITO DE AMARANTO Y PILONCILLO (350 ml)</a
-                            ><span>$77</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Infuciones">
-                          <img
-                            src="assets/img/menu/chocolate.jpg"
-                            class="menu-img"
-                            alt="Chocolate"
-                          />
-                          <div class="menu-content">
-                            <a href="#">CHOCOLATE DE AGUA O LECHE (350 ml)</a
-                            ><span>$110</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Infuciones">
-                          <img
-                            src="assets/img/menu/poleo.jpg"
-                            class="menu-img"
-                            alt="Poleo"
-                          />
-                          <div class="menu-content">
-                            <a href="#">INFUSIÓN DE POLEO (300 ml)</a
-                            ><span>$65</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Infuciones">
-                          <img
-                            src="assets/img/menu/infusion.jpg"
-                            class="menu-img"
-                            alt="Infusiones"
-                          />
-                          <div class="menu-content">
-                            <a href="#">INFUSIONES HERBALES (300 ml)</a
-                            ><span>$75</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Infuciones">
-                          <img
-                            src="assets/img/menu/matcha-latte.jpg"
-                            class="menu-img"
-                            alt="Matcha Latte"
-                          />
-                          <div class="menu-content">
-                            <a href="#">MATCHA LATTE (150 ml)</a
-                            ><span>$85</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Infuciones">
-                          <img
-                            src="assets/img/menu/taro-latte.jpg"
-                            class="menu-img"
-                            alt="Taro Latte"
-                          />
-                          <div class="menu-content">
-                            <a href="#">TARO LATTE (150 ml)</a><span>$85</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Infuciones">
-                          <img
-                            src="assets/img/menu/chai-latte.jpg"
-                            class="menu-img"
-                            alt="Chai Latte"
-                          />
-                          <div class="menu-content">
-                            <a href="#">CHAI LATTE (150 ml)</a><span>$85</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Infuciones">
-                          <img
-                            src="assets/img/menu/kombucha.jpg"
-                            class="menu-img"
-                            alt="Kombucha"
-                          />
-                          <div class="menu-content">
-                            <a href="#">KOMBUCHA (475 ml)</a><span>$100</span>
-                          </div>
-                        </div>
+                    <!-- PAN -->
+                    <div class="col-lg-6 menu-item filter-Pan">
+                      <div class="menu-content">
+                        <a href="#">Pan Dulce (85 g) / pieza</a><span>$50</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Pan">
+                      <div class="menu-content">
+                        <a href="#">Pan Francés Brûlé (2 pzas)</a
+                        ><span>$160</span>
+                      </div>
+                    </div>
 
-                        <!-- ================= PAN ================= -->
-                        <div class="col-lg-6 menu-item filter-Pan">
-                          <img
-                            src="assets/img/menu/pan-dulce.jpg"
-                            class="menu-img"
-                            alt="Pan dulce"
-                          />
-                          <div class="menu-content">
-                            <a href="#">PAN DULCE (85 g) / pieza</a
-                            ><span>$50</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Pan">
-                          <img
-                            src="assets/img/menu/pan-frances.jpg"
-                            class="menu-img"
-                            alt="Pan francés brûlé"
-                          />
-                          <div class="menu-content">
-                            <a href="#">PAN FRANCÉS BRÛLÉ (2 pzas)</a
-                            ><span>$160</span>
-                          </div>
-                        </div>
+                    <!-- FRUTAS Y AVENA -->
+                    <div class="col-lg-6 menu-item filter-Frutas">
+                      <div class="menu-content">
+                        <a href="#">Fruta de Temporada</a><span>$190</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Frutas">
+                      <div class="menu-content">
+                        <a href="#">Bowl de Frutos Rojos</a><span>$180</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Frutas">
+                      <div class="menu-content">
+                        <a href="#">Avena Overnight</a><span>$110</span>
+                      </div>
+                    </div>
 
-                        <!-- ================= FRUTAS Y AVENA ================= -->
-                        <div class="col-lg-6 menu-item filter-Frutas">
-                          <img
-                            src="assets/img/menu/fruta.jpg"
-                            class="menu-img"
-                            alt="Fruta de temporada"
-                          />
-                          <div class="menu-content">
-                            <a href="#">FRUTA DE TEMPORADA</a><span>$190</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Frutas">
-                          <img
-                            src="assets/img/menu/bowl-frutos.jpg"
-                            class="menu-img"
-                            alt="Bowl de frutos rojos"
-                          />
-                          <div class="menu-content">
-                            <a href="#">BOWL DE FRUTOS ROJOS</a
-                            ><span>$180</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Frutas">
-                          <img
-                            src="assets/img/menu/avena.jpg"
-                            class="menu-img"
-                            alt="Avena overnight"
-                          />
-                          <div class="menu-content">
-                            <a href="#">AVENA OVERNIGHT</a><span>$110</span>
-                          </div>
-                        </div>
+                    <!-- JUGOS Y SMOOTHIES -->
+                    <div class="col-lg-6 menu-item filter-Jugos">
+                      <div class="menu-content">
+                        <a href="#">Jugo del Día / Naranja</a><span>$77</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Jugos">
+                      <div class="menu-content">
+                        <a href="#">Mujer Maya</a><span>$130</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Jugos">
+                      <div class="menu-content">
+                        <a href="#">Manantial</a><span>$130</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Jugos">
+                      <div class="menu-content">
+                        <a href="#">Híkuri Desintoxicante</a><span>$130</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Jugos">
+                      <div class="menu-content">
+                        <a href="#">Celestún</a><span>$130</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Jugos">
+                      <div class="menu-content">
+                        <a href="#">Mara’akame</a><span>$130</span>
+                      </div>
+                    </div>
 
-                        <!-- ================= JUGOS Y SMOOTHIES ================= -->
-                        <div class="col-lg-6 menu-item filter-Jugos">
-                          <img
-                            src="assets/img/menu/jugo.jpg"
-                            class="menu-img"
-                            alt="Jugo del día"
-                          />
-                          <div class="menu-content">
-                            <a href="#">JUGO DEL DÍA / NARANJA</a
-                            ><span>$77</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Jugos">
-                          <img
-                            src="assets/img/menu/mujer-maya.jpg"
-                            class="menu-img"
-                            alt="Mujer Maya"
-                          />
-                          <div class="menu-content">
-                            <a href="#">MUJER MAYA</a><span>$130</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Jugos">
-                          <img
-                            src="assets/img/menu/manantial.jpg"
-                            class="menu-img"
-                            alt="Manantial"
-                          />
-                          <div class="menu-content">
-                            <a href="#">MANANTIAL</a><span>$130</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Jugos">
-                          <img
-                            src="assets/img/menu/hikuri.jpg"
-                            class="menu-img"
-                            alt="Hikuri Desintoxicante"
-                          />
-                          <div class="menu-content">
-                            <a href="#">HIKURI DESINTOXICANTE</a
-                            ><span>$130</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Jugos">
-                          <img
-                            src="assets/img/menu/celestun.jpg"
-                            class="menu-img"
-                            alt="Celestún"
-                          />
-                          <div class="menu-content">
-                            <a href="#">CELESTÚN</a><span>$130</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Jugos">
-                          <img
-                            src="assets/img/menu/maraakame.jpg"
-                            class="menu-img"
-                            alt="Mara’akame"
-                          />
-                          <div class="menu-content">
-                            <a href="#">MARA’AKAME</a><span>$130</span>
-                          </div>
-                        </div>
+                    <!-- CHILAQUILES -->
+                    <div class="col-lg-6 menu-item filter-Chilaquiles">
+                      <div class="menu-content">
+                        <a href="#">Chilaquiles Rojos</a><span>$210</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Chilaquiles">
+                      <div class="menu-content">
+                        <a href="#">Chilaquiles Verdes</a><span>$210</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Chilaquiles">
+                      <div class="menu-content">
+                        <a href="#">Chilaquiles Mole Oaxaqueño / Poblano</a
+                        ><span>$210</span>
+                      </div>
+                    </div>
 
-                        <!-- ================= CHILAQUILES ================= -->
-                        <div class="col-lg-6 menu-item filter-Chilaquiles">
-                          <img
-                            src="assets/img/menu/chilaquiles-rojos.jpg"
-                            class="menu-img"
-                            alt="Chilaquiles Rojos"
-                          />
-                          <div class="menu-content">
-                            <a href="#">CHILAQUILES ROJOS</a><span>$210</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Chilaquiles">
-                          <img
-                            src="assets/img/menu/chilaquiles-verdes.jpg"
-                            class="menu-img"
-                            alt="Chilaquiles Verdes"
-                          />
-                          <div class="menu-content">
-                            <a href="#">CHILAQUILES VERDES</a><span>$210</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Chilaquiles">
-                          <img
-                            src="assets/img/menu/chilaquiles-mole.jpg"
-                            class="menu-img"
-                            alt="Chilaquiles Mole"
-                          />
-                          <div class="menu-content">
-                            <a href="#">CHILAQUILES MOLE OAXAQUEÑO / POBLANO</a
-                            ><span>$210</span>
-                          </div>
-                        </div>
+                    <!-- EXTRAS -->
+                    <div class="col-lg-6 menu-item filter-Extras">
+                      <div class="menu-content">
+                        <a href="#">Extra: Birria de Res</a><span>+$150</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Extras">
+                      <div class="menu-content">
+                        <a href="#">Extra: Tasajo de San Antonio</a
+                        ><span>+$115</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Extras">
+                      <div class="menu-content">
+                        <a href="#">Extra: Pollo</a><span>+$110</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Extras">
+                      <div class="menu-content">
+                        <a href="#">Extra: Chorizo de Tlacolula</a
+                        ><span>+$130</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Extras">
+                      <div class="menu-content">
+                        <a href="#">Extra: Huevo</a><span>+$55</span>
+                      </div>
+                    </div>
 
-                        <!-- Extras -->
-                        <div class="col-lg-6 menu-item filter-Extras">
-                          <img
-                            src="assets/img/menu/birria.jpg"
-                            class="menu-img"
-                            alt="Birria"
-                          />
-                          <div class="menu-content">
-                            <a href="#">EXTRA: BIRRIA DE RES</a
-                            ><span>+$150</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Extras">
-                          <img
-                            src="assets/img/menu/tasajo.jpg"
-                            class="menu-img"
-                            alt="Tasajo"
-                          />
-                          <div class="menu-content">
-                            <a href="#">EXTRA: TASAJO DE SAN ANTONIO</a
-                            ><span>+$115</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Extras">
-                          <img
-                            src="assets/img/menu/pollo.jpg"
-                            class="menu-img"
-                            alt="Pollo"
-                          />
-                          <div class="menu-content">
-                            <a href="#">EXTRA: POLLO</a><span>+$110</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Extras">
-                          <img
-                            src="assets/img/menu/chorizo.jpg"
-                            class="menu-img"
-                            alt="Chorizo"
-                          />
-                          <div class="menu-content">
-                            <a href="#">EXTRA: CHORIZO DE TLACOLULA</a
-                            ><span>+$130</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Extras">
-                          <img
-                            src="assets/img/menu/huevo.jpg"
-                            class="menu-img"
-                            alt="Huevo"
-                          />
-                          <div class="menu-content">
-                            <a href="#">EXTRA: HUEVO</a><span>+$55</span>
-                          </div>
-                        </div>
-
-                        <!-- ================= OMELETTES ================= -->
-                        <div class="col-lg-6 menu-item filter-Omelettes">
-                          <img
-                            src="assets/img/menu/omelette-flor.jpg"
-                            class="menu-img"
-                            alt="Omelette de flor"
-                          />
-                          <div class="menu-content">
-                            <a href="#">OMELETTE DE FLOR DE CALABAZA Y ELOTE</a
-                            ><span>$210</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Omelettes">
-                          <img
-                            src="assets/img/menu/omelette-cremoso.jpg"
-                            class="menu-img"
-                            alt="Omelette cremoso"
-                          />
-                          <div class="menu-content">
-                            <a href="#">OMELETTE CREMOSO</a><span>$210</span>
-                          </div>
-                        </div>
+                    <!-- OMELETTES -->
+                    <div class="col-lg-6 menu-item filter-Omelettes">
+                      <div class="menu-content">
+                        <a href="#">Omelette de Flor de Calabaza y Elote</a
+                        ><span>$210</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Omelettes">
+                      <div class="menu-content">
+                        <a href="#">Omelette Cremoso</a><span>$210</span>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                <!-- ==================== COMIDA / CENA ==================== -->
                 <div class="tab-pane active show" id="tab-2">
-                  <div class="row">
-                    <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3></h3>
-                      <div class="row" data-aos="fade-up" data-aos-delay="100">
-                        <div
-                          class="col-lg-12 d-flex justify-content-center menu-block"
-                        >
-                          <ul id="menu-flters-comidas" class="menu-filters">
-                            <li data-filter=".filter-Entradas">ENTRADAS</li>
-                            <li data-filter=".filter-Sopas">SOPAS</li>
-                            <li data-filter=".filter-Fuertes">FUERTES</li>
-                            <li data-filter=".filter-Postres ">POSTRES</li>
-                          </ul>
-                        </div>
+                  <ul
+                    id="menu-flters-comidas"
+                    class="menu-filters d-flex justify-content-center"
+                  >
+                    <li data-filter=".filter-Entradas">Entradas</li>
+                    <li data-filter=".filter-Sopas">Sopas</li>
+                    <li data-filter=".filter-Fuertes">Fuertes</li>
+                    <li data-filter=".filter-Postres">Postres</li>
+                  </ul>
+
+                  <div class="row menu-container" id="menu-comidas">
+                    <!-- ENTRADAS -->
+                    <div class="col-lg-6 menu-item filter-Entradas">
+                      <div class="menu-content">
+                        <a href="#">Tlayuda Agualumbre</a><span>$280</span>
                       </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Entradas">
+                      <div class="menu-content">
+                        <a href="#">Sopes de Tasajo</a><span>$210</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Entradas">
+                      <div class="menu-content">
+                        <a href="#">Memelas de Chicharrón Prensado</a
+                        ><span>$195</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Entradas">
+                      <div class="menu-content">
+                        <a href="#">Molotes de Plátano Macho</a
+                        ><span>$180</span>
+                      </div>
+                    </div>
 
-                      <div class="row menu-container" id="menu-comidas">
-                        <hr />
-                        <!-- ================= ENTRADAS ================= -->
-                        <div class="col-lg-6 menu-item filter-Entradas">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">TLAYUDA AGUALUMBRE</a><span>$280</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Entradas">
-                          <img
-                            src="assets/img/menu/sope.jpg"
-                            class="menu-img"
-                            alt="Sopes de Tasajo"
-                          />
-                          <div class="menu-content">
-                            <a href="#">SOPES DE TASAJO</a><span>$210</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Entradas">
-                          <img
-                            src="assets/img/menu/memelas.jpg"
-                            class="menu-img"
-                            alt="Memelas"
-                          />
-                          <div class="menu-content">
-                            <a href="#">MEMELAS DE CHICHARRÓN PRENSADO</a
-                            ><span>$195</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Entradas">
-                          <img
-                            src="assets/img/menu/molotes.jpg"
-                            class="menu-img"
-                            alt="Molotes"
-                          />
-                          <div class="menu-content">
-                            <a href="#">MOLOTES DE PLÁTANO MACHO</a
-                            ><span>$180</span>
-                          </div>
-                        </div>
+                    <!-- SOPAS -->
+                    <div class="col-lg-6 menu-item filter-Sopas">
+                      <div class="menu-content">
+                        <a href="#">Sopa de Guajillo</a><span>$220</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Sopas">
+                      <div class="menu-content">
+                        <a href="#">Sopa de Frijol Negro</a><span>$210</span>
+                      </div>
+                    </div>
 
-                        <!-- ================= SOPAS ================= -->
-                        <div class="col-lg-6 menu-item filter-Sopas">
-                          <img
-                            src="assets/img/menu/sopa-guajillo.jpg"
-                            class="menu-img"
-                            alt="Sopa de Guajillo"
-                          />
-                          <div class="menu-content">
-                            <a href="#">SOPA DE GUAJILLO</a><span>$220</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Sopas">
-                          <img
-                            src="assets/img/menu/sopa-frijol.jpg"
-                            class="menu-img"
-                            alt="Sopa de Frijol Negro"
-                          />
-                          <div class="menu-content">
-                            <a href="#">SOPA DE FRIJOL NEGRO</a
-                            ><span>$210</span>
-                          </div>
-                        </div>
+                    <!-- FUERTES -->
+                    <div class="col-lg-6 menu-item filter-Fuertes">
+                      <div class="menu-content">
+                        <a href="#">Mole Negro Oaxaqueño</a><span>$350</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Fuertes">
+                      <div class="menu-content">
+                        <a href="#">Mole Coloradito</a><span>$340</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Fuertes">
+                      <div class="menu-content">
+                        <a href="#">Tasajo a las Brasas</a><span>$330</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Fuertes">
+                      <div class="menu-content">
+                        <a href="#">Pechuga Rellena de Hoja Santa</a
+                        ><span>$320</span>
+                      </div>
+                    </div>
 
-                        <!-- ================= FUERTES ================= -->
-                        <div class="col-lg-6 menu-item filter-Fuertes">
-                          <img
-                            src="assets/img/menu/mole-negro.jpg"
-                            class="menu-img"
-                            alt="Mole Negro"
-                          />
-                          <div class="menu-content">
-                            <a href="#">MOLE NEGRO OAXAQUEÑO</a
-                            ><span>$350</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Fuertes">
-                          <img
-                            src="assets/img/menu/mole-coloradito.jpg"
-                            class="menu-img"
-                            alt="Mole Coloradito"
-                          />
-                          <div class="menu-content">
-                            <a href="#">MOLE COLORADITO</a><span>$340</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Fuertes">
-                          <img
-                            src="assets/img/menu/tasajo.jpg"
-                            class="menu-img"
-                            alt="Tasajo a las brasas"
-                          />
-                          <div class="menu-content">
-                            <a href="#">TASAJO A LAS BRASAS</a><span>$330</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Fuertes">
-                          <img
-                            src="assets/img/menu/pechuga.jpg"
-                            class="menu-img"
-                            alt="Pechuga rellena"
-                          />
-                          <div class="menu-content">
-                            <a href="#">PECHUGA RELLENA DE HOJA SANTA</a
-                            ><span>$320</span>
-                          </div>
-                        </div>
-
-                        <!-- ================= POSTRES ================= -->
-                        <div class="col-lg-6 menu-item filter-Postres">
-                          <img
-                            src="assets/img/menu/nieve.jpg"
-                            class="menu-img"
-                            alt="Nieve artesanal"
-                          />
-                          <div class="menu-content">
-                            <a href="#">NIEVE ARTESANAL</a><span>$140</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Postres">
-                          <img
-                            src="assets/img/menu/flan.jpg"
-                            class="menu-img"
-                            alt="Flan de cajeta"
-                          />
-                          <div class="menu-content">
-                            <a href="#">FLAN DE CAJETA</a><span>$150</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Postres">
-                          <img
-                            src="assets/img/menu/pastel.jpg"
-                            class="menu-img"
-                            alt="Pastel de elote"
-                          />
-                          <div class="menu-content">
-                            <a href="#">PASTEL DE ELOTE</a><span>$160</span>
-                          </div>
-                        </div>
+                    <!-- POSTRES -->
+                    <div class="col-lg-6 menu-item filter-Postres">
+                      <div class="menu-content">
+                        <a href="#">Nieve Artesanal</a><span>$140</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Postres">
+                      <div class="menu-content">
+                        <a href="#">Flan de Cajeta</a><span>$150</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Postres">
+                      <div class="menu-content">
+                        <a href="#">Pastel de Elote</a><span>$160</span>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                <!-- ==================== COCTELERÍA ==================== -->
                 <div class="tab-pane" id="tab-3">
-                  <div class="row">
-                    <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3></h3>
-                      <div class="row" data-aos="fade-up" data-aos-delay="100">
-                        <div
-                          class="col-lg-12 d-flex justify-content-center menu-block"
-                        >
-                          <ul id="menu-flters-cocteles" class="menu-filters">
-                            <li data-filter=".filter-Clasicos">CLASICOS</li>
-                            <li data-filter=".filter-Mojitos">MOJITOS</li>
-                            <li data-filter=".filter-Margaritas">MARGARITAS</li>
-                            <li data-filter=".filter-Mezcalinas ">
-                              MEZCALINAS
-                            </li>
-                          </ul>
-                        </div>
+                  <ul
+                    id="menu-flters-cocteles"
+                    class="menu-filters d-flex justify-content-center"
+                  >
+                    <li data-filter=".filter-Clasicos">Clásicos</li>
+                    <li data-filter=".filter-Mojitos">Mojitos</li>
+                    <li data-filter=".filter-Margaritas">Margaritas</li>
+                    <li data-filter=".filter-Mezcalinas">Mezcalinas</li>
+                  </ul>
+
+                  <div class="row menu-container" id="menu-cocteles">
+                    <!-- CLÁSICOS -->
+                    <div class="col-lg-6 menu-item filter-Clasicos">
+                      <div class="menu-content">
+                        <a href="#">Dry Martini</a><span>$180</span>
                       </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Clasicos">
+                      <div class="menu-content">
+                        <a href="#">Dirty Martini</a><span>$190</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Clasicos">
+                      <div class="menu-content">
+                        <a href="#">Negroni</a><span>$190</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Clasicos">
+                      <div class="menu-content">
+                        <a href="#">Hanky Panky</a><span>$180</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Clasicos">
+                      <div class="menu-content">
+                        <a href="#">Bramble</a><span>$180</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Clasicos">
+                      <div class="menu-content">
+                        <a href="#">Sidecar</a><span>$200</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Clasicos">
+                      <div class="menu-content">
+                        <a href="#">Old Fashioned</a><span>$230</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Clasicos">
+                      <div class="menu-content">
+                        <a href="#">Manhattan</a><span>$215</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Clasicos">
+                      <div class="menu-content">
+                        <a href="#">Whisky Sour</a><span>$180</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Clasicos">
+                      <div class="menu-content">
+                        <a href="#">Piña Colada</a><span>$140</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Clasicos">
+                      <div class="menu-content">
+                        <a href="#">Cosmopolitan</a><span>$—</span>
+                      </div>
+                    </div>
 
-                      <div class="row menu-container" id="menu-cocteles">
-                        <hr />
-                        <div class="col-lg-6 menu-item filter-Clasicos">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">DRY MARTINI</a><span>$180</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Clasicos">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">DIRTY MARTINI</a><span>$190</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Clasicos">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">NEGRONI</a><span>$190</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Clasicos">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">HANKY PANKY</a><span>$180</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Clasicos">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">BRAMBLE</a><span>$180</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Clasicos">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">SIDECAR</a><span>$200</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Clasicos">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">OLD FASHIONED</a><span>$230</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Clasicos">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">MANHATTAN</a><span>$215</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Clasicos">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">WHISKY SOUR</a><span>$180</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Clasicos">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">PIÑA COLADA</a><span>$140</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Clasicos">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">COSMOPOLITAN</a><span>$</span>
-                          </div>
-                        </div>
+                    <!-- MOJITOS -->
+                    <div class="col-lg-6 menu-item filter-Mojitos">
+                      <div class="menu-content">
+                        <a href="#">Clásico</a><span>$140</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Mojitos">
+                      <div class="menu-content">
+                        <a href="#">Frutos Rojos</a><span>$200</span>
+                      </div>
+                    </div>
 
-                        <div class="col-lg-6 menu-item filter-Mojitos">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">CLASICO</a><span>$140</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Mojitos">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">FRUTOS ROJOS</a><span>$200</span>
-                          </div>
-                        </div>
+                    <!-- MARGARITAS -->
+                    <div class="col-lg-6 menu-item filter-Margaritas">
+                      <div class="menu-content">
+                        <a href="#">Clásica</a><span>$140</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 menu-item filter-Margaritas">
+                      <div class="menu-content">
+                        <a href="#">De Sabores</a><span>$140</span>
+                      </div>
+                    </div>
 
-                        <div class="col-lg-6 menu-item filter-Margaritas">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">CLASICA</a><span>$140</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 menu-item filter-Margaritas">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">DE SABORES</a><span>$140</span>
-                          </div>
-                        </div>
-
-                        <div class="col-lg-6 menu-item filter-Mezcalinas">
-                          <img
-                            src="assets/img/menu/tlayuda.jpg"
-                            class="menu-img"
-                            alt="Tlayuda AguaLumbre"
-                          />
-                          <div class="menu-content">
-                            <a href="#">MEZCAL,LIMON Y PURE DE PREFERENCIA</a
-                            ><span>$145</span>
-                          </div>
-                        </div>
+                    <!-- MEZCALINAS -->
+                    <div class="col-lg-6 menu-item filter-Mezcalinas">
+                      <div class="menu-content">
+                        <a href="#">Mezcal, Limón y Puré de Preferencia</a
+                        ><span>$145</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- End Content -->
           </div>
         </div>
       </section>
       <!-- End Menu Section -->
 
-      <!-- ======= Specials Section ======= -->
-      <section id="specials" class="specials">
+      <!-- ======= Espacios Section ======= -->
+      <section id="espacios" class="specials">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Espacios</h2>
-            <p>Dale un vistaso a nuestros espacios</p>
+            <p>Dale un vistazo a nuestros espacios</p>
           </div>
 
           <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <!-- Tabs -->
             <div class="col-lg-3">
               <ul class="nav nav-tabs flex-column">
                 <li class="nav-item">
@@ -1037,7 +723,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" data-bs-toggle="tab" href="#tab-5"
-                    >Mezcaleria</a
+                    >Mezcalería</a
                   >
                 </li>
                 <li class="nav-item">
@@ -1062,14 +748,17 @@
                 </li>
               </ul>
             </div>
+
+            <!-- Content -->
             <div class="col-lg-9 mt-4 mt-lg-0">
               <div class="tab-content">
+                <!-- Espacio: Salón Principal -->
                 <div class="tab-pane active show" id="tab-4">
                   <div class="row">
                     <div class="col-lg-8 details order-2 order-lg-1">
                       <h3>Salón Principal</h3>
                       <p class="fst-italic">
-                        El salón principal de Agualumbre es un espacio donde la
+                        El salón principal de AGUALUMBRE es un espacio donde la
                         calidez de los materiales naturales y la luz se
                         fusionan. Un ambiente acogedor y sofisticado que
                         equilibra el diseño contemporáneo con las raíces
@@ -1077,75 +766,84 @@
                         experiencia gastronómica única.
                       </p>
                     </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <div
+                      class="col-lg-4 text-center order-1 order-lg-2 espacio-img"
+                    >
                       <img
                         src="img/espacios/salon1.webp"
-                        alt=""
-                        class="img-fluid"
+                        alt="Salón principal de Agualumbre"
+                        class="img-fluid mb-3"
                       />
-                      <hr />
                       <img
                         src="img/espacios/salon2.webp"
-                        alt=""
+                        alt="Vista del salón principal"
                         class="img-fluid"
                       />
                     </div>
                   </div>
                 </div>
+
+                <!-- Espacio: Mezcalería -->
                 <div class="tab-pane" id="tab-5">
                   <div class="row">
                     <div class="col-lg-8 details order-2 order-lg-1">
-                      <h3>Mezcaleria</h3>
+                      <h3>Mezcalería</h3>
                       <p class="fst-italic">
-                        La mezcalería de Agualumbre es un espacio vibrante,
+                        La mezcalería de AGUALUMBRE es un espacio vibrante,
                         ideal para disfrutar de nuestra coctelería de autor,
                         catas exclusivas y eventos especiales, mientras se
                         descubre la riqueza de los mezcales y otros destilados
                         de México.
                       </p>
                     </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <div
+                      class="col-lg-4 text-center order-1 order-lg-2 espacio-img"
+                    >
                       <img
                         src="img/espacios/mezcaleria1.webp"
-                        alt=""
-                        class="img-fluid"
+                        alt="Interior de la mezcalería"
+                        class="img-fluid mb-3"
                       />
-                      <hr />
                       <img
                         src="img/espacios/mezcaleria2.webp"
-                        alt=""
+                        alt="Ambiente de la mezcalería"
                         class="img-fluid"
                       />
                     </div>
                   </div>
                 </div>
+
+                <!-- Espacio: Privado de Amador -->
                 <div class="tab-pane" id="tab-6">
                   <div class="row">
                     <div class="col-lg-8 details order-2 order-lg-1">
                       <h3>Privado de Amador</h3>
                       <p class="fst-italic">
                         El Privado de Amador es un espacio exclusivo en
-                        Agualumbre, donde el arte cobra vida a través de las
+                        AGUALUMBRE, donde el arte cobra vida a través de las
                         obras del artista oaxaqueño Amador Montes. Un lugar
                         perfecto para quienes buscan un momento privado en un
                         entorno exclusivo y lleno de inspiración.
                       </p>
                     </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <div
+                      class="col-lg-4 text-center order-1 order-lg-2 espacio-img"
+                    >
                       <img
                         src="img/espacios/privado1.webp"
-                        alt=""
-                        class="img-fluid"
+                        alt="Privado de Amador"
+                        class="img-fluid mb-3"
                       />
-                      <hr />
                       <img
-                        src="img/espacios/privado1.webp"
-                        alt=""
+                        src="img/espacios/privado2.webp"
+                        alt="Detalle del Privado de Amador"
                         class="img-fluid"
                       />
                     </div>
                   </div>
                 </div>
+
+                <!-- Espacio: El Privado -->
                 <div class="tab-pane" id="tab-7">
                   <div class="row">
                     <div class="col-lg-8 details order-2 order-lg-1">
@@ -1154,52 +852,57 @@
                         En nuestro privado, cada detalle está pensado para
                         ofrecerte una experiencia única y personal. Este espacio
                         íntimo es perfecto para reuniones privadas o
-                        celebraciones, aquí la discreción, el confort y nuestra
-                        hospitalidad son los protagonistas. una experiencia
-                        gastronómica única.
+                        celebraciones, donde la discreción, el confort y nuestra
+                        hospitalidad son los protagonistas.
                       </p>
                     </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <div
+                      class="col-lg-4 text-center order-1 order-lg-2 espacio-img"
+                    >
                       <img
                         src="img/espacios/elPrivado1.webp"
-                        alt=""
-                        class="img-fluid"
+                        alt="Vista general de El Privado"
+                        class="img-fluid mb-3"
                       />
-                      <hr />
                       <img
                         src="img/espacios/elPrivado2.webp"
-                        alt=""
+                        alt="Decoración de El Privado"
                         class="img-fluid"
                       />
                     </div>
                   </div>
                 </div>
+
+                <!-- Espacio: Zona de Niños -->
                 <div class="tab-pane" id="tab-8">
                   <div class="row">
                     <div class="col-lg-8 details order-2 order-lg-1">
                       <h3>Zona de Niños</h3>
                       <p class="fst-italic">
-                        En Agualumbre, pensamos en todos. Nuestra zona para
+                        En AGUALUMBRE, pensamos en todos. Nuestra zona para
                         niños está diseñada para que los más pequeños disfruten
                         de un espacio seguro y divertido mientras tú te dedicas
                         a saborear cada momento.
                       </p>
                     </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <div
+                      class="col-lg-4 text-center order-1 order-lg-2 espacio-img"
+                    >
                       <img
                         src="img/espacios/niños1.webp"
-                        alt=""
-                        class="img-fluid"
+                        alt="Área de juegos para niños"
+                        class="img-fluid mb-3"
                       />
-                      <hr />
                       <img
                         src="img/espacios/niños2.webp"
-                        alt=""
+                        alt="Zona de niños de Agualumbre"
                         class="img-fluid"
                       />
                     </div>
                   </div>
                 </div>
+
+                <!-- Espacio: Terraza -->
                 <div class="tab-pane" id="tab-9">
                   <div class="row">
                     <div class="col-lg-8 details order-2 order-lg-1">
@@ -1212,16 +915,17 @@
                         aire fresco y la calidez de nuestra hospitalidad.
                       </p>
                     </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <div
+                      class="col-lg-4 text-center order-1 order-lg-2 espacio-img"
+                    >
                       <img
                         src="img/espacios/terraza1.webp"
-                        alt=""
-                        class="img-fluid"
+                        alt="Vista panorámica de la terraza"
+                        class="img-fluid mb-3"
                       />
-                      <hr />
                       <img
                         src="img/espacios/terraza2.webp"
-                        alt=""
+                        alt="Ambiente de la terraza"
                         class="img-fluid"
                       />
                     </div>
@@ -1229,22 +933,23 @@
                 </div>
               </div>
             </div>
+            <!-- End Content -->
           </div>
         </div>
       </section>
-      <!-- End Specials Section -->
+      <!-- End Espacios Section -->
 
       <!-- ======= Gallery Section ======= -->
       <section id="gallery" class="gallery">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Gallery</h2>
-            <p>Some photos from Our Restaurant</p>
+            <h2>Galería</h2>
+            <p>Algunas fotos de nosotros</p>
           </div>
         </div>
 
         <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-          <div class="row g-0">
+          <div class="row g-3">
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
                 <a
@@ -1254,7 +959,7 @@
                 >
                   <img
                     src="img/galeria/cocina1.webp"
-                    alt=""
+                    alt="Cocina 1"
                     class="img-fluid"
                   />
                 </a>
@@ -1269,7 +974,7 @@
                 >
                   <img
                     src="img/galeria/cocina2.webp"
-                    alt=""
+                    alt="Cocina 2"
                     class="img-fluid"
                   />
                 </a>
@@ -1284,7 +989,7 @@
                 >
                   <img
                     src="img/galeria/cocina3.webp"
-                    alt=""
+                    alt="Cocina 3"
                     class="img-fluid"
                   />
                 </a>
@@ -1299,7 +1004,7 @@
                 >
                   <img
                     src="img/galeria/cocina4.webp"
-                    alt=""
+                    alt="Cocina 4"
                     class="img-fluid"
                   />
                 </a>
@@ -1314,7 +1019,7 @@
                 >
                   <img
                     src="img/galeria/cocina5.webp"
-                    alt=""
+                    alt="Cocina 5"
                     class="img-fluid"
                   />
                 </a>
@@ -1329,7 +1034,7 @@
                 >
                   <img
                     src="img/galeria/cocina6.webp"
-                    alt=""
+                    alt="Cocina 6"
                     class="img-fluid"
                   />
                 </a>
@@ -1344,7 +1049,7 @@
                 >
                   <img
                     src="img/galeria/cocina7.webp"
-                    alt=""
+                    alt="Cocina 7"
                     class="img-fluid"
                   />
                 </a>
@@ -1359,7 +1064,7 @@
                 >
                   <img
                     src="img/galeria/cocina8.webp"
-                    alt=""
+                    alt="Cocina 8"
                     class="img-fluid"
                   />
                 </a>
@@ -1374,7 +1079,7 @@
                 >
                   <img
                     src="img/galeria/cocina9.webp"
-                    alt=""
+                    alt="Cocina 9"
                     class="img-fluid"
                   />
                 </a>
@@ -1389,7 +1094,7 @@
                 >
                   <img
                     src="img/galeria/cocina10.webp"
-                    alt=""
+                    alt="Cocina 10"
                     class="img-fluid"
                   />
                 </a>
@@ -1404,7 +1109,7 @@
                 >
                   <img
                     src="img/galeria/cocina11.webp"
-                    alt=""
+                    alt="Cocina 11"
                     class="img-fluid"
                   />
                 </a>
@@ -1419,7 +1124,7 @@
                 >
                   <img
                     src="img/galeria/cocina12.webp"
-                    alt=""
+                    alt="Cocina 12"
                     class="img-fluid"
                   />
                 </a>
@@ -1434,7 +1139,7 @@
                 >
                   <img
                     src="img/galeria/cocina13.webp"
-                    alt=""
+                    alt="Cocina 13"
                     class="img-fluid"
                   />
                 </a>
@@ -1449,7 +1154,7 @@
                 >
                   <img
                     src="img/galeria/cocina14.webp"
-                    alt=""
+                    alt="Cocina 14"
                     class="img-fluid"
                   />
                 </a>
@@ -1464,7 +1169,7 @@
                 >
                   <img
                     src="img/galeria/cocina15.webp"
-                    alt=""
+                    alt="Cocina 15"
                     class="img-fluid"
                   />
                 </a>
@@ -1479,7 +1184,7 @@
                 >
                   <img
                     src="img/galeria/cocina16.webp"
-                    alt=""
+                    alt="Cocina 16"
                     class="img-fluid"
                   />
                 </a>
@@ -1494,7 +1199,7 @@
                 >
                   <img
                     src="img/galeria/cocina17.webp"
-                    alt=""
+                    alt="Cocina 17"
                     class="img-fluid"
                   />
                 </a>
@@ -1509,7 +1214,7 @@
                 >
                   <img
                     src="img/galeria/cocina18.webp"
-                    alt=""
+                    alt="Cocina 18"
                     class="img-fluid"
                   />
                 </a>
@@ -1524,7 +1229,7 @@
                 >
                   <img
                     src="img/galeria/cocinera.webp"
-                    alt=""
+                    alt="Cocinera"
                     class="img-fluid"
                   />
                 </a>
@@ -1539,8 +1244,8 @@
       <section id="book-a-table" class="book-a-table">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Reservacion</h2>
-            <p>Has una reservacion</p>
+            <h2>Reservación</h2>
+            <p>Realiza tu reservación con nosotros</p>
           </div>
 
           <form
@@ -1558,92 +1263,79 @@
                   name="name"
                   class="form-control"
                   id="name"
-                  placeholder="Your Name"
-                  data-rule="minlen:4"
-                  data-msg="Please enter at least 4 chars"
+                  placeholder="Nombre completo *"
+                  required
+                  minlength="4"
                 />
-                <div class="validate"></div>
+                <div class="validate">
+                  Por favor ingresa al menos 4 caracteres
+                </div>
               </div>
+
               <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
                 <input
                   type="email"
-                  class="form-control"
                   name="email"
+                  class="form-control"
                   id="email"
-                  placeholder="Your Email"
-                  data-rule="email"
-                  data-msg="Please enter a valid email"
+                  placeholder="Correo electrónico *"
+                  required
                 />
-                <div class="validate"></div>
+                <div class="validate">Por favor ingresa un correo válido</div>
               </div>
+
               <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
                 <input
-                  type="text"
-                  class="form-control"
+                  type="tel"
                   name="phone"
+                  class="form-control"
                   id="phone"
-                  placeholder="Your Phone"
-                  data-rule="minlen:4"
-                  data-msg="Please enter at least 4 chars"
+                  placeholder="Número telefónico *"
+                  required
+                  pattern="[0-9]{10}"
                 />
-                <div class="validate"></div>
+                <div class="validate">
+                  Por favor ingresa un número válido de 10 dígitos
+                </div>
               </div>
+
               <div class="col-lg-4 col-md-6 form-group mt-3">
                 <input
-                  type="text"
+                  type="date"
                   name="date"
                   class="form-control"
                   id="date"
-                  placeholder="Date"
-                  data-rule="minlen:4"
-                  data-msg="Please enter at least 4 chars"
+                  placeholder="Fecha *"
+                  required
                 />
-                <div class="validate"></div>
+                <div class="validate">Por favor selecciona una fecha</div>
               </div>
-              <div class="col-lg-4 col-md-6 form-group mt-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="time"
-                  id="time"
-                  placeholder="Time"
-                  data-rule="minlen:4"
-                  data-msg="Please enter at least 4 chars"
-                />
-                <div class="validate"></div>
-              </div>
+
               <div class="col-lg-4 col-md-6 form-group mt-3">
                 <input
                   type="number"
-                  class="form-control"
                   name="people"
+                  class="form-control"
                   id="people"
-                  placeholder="# of people"
-                  data-rule="minlen:1"
-                  data-msg="Please enter at least 1 chars"
+                  placeholder="Número de personas *"
+                  required
+                  min="1"
                 />
-                <div class="validate"></div>
+                <div class="validate">Por favor ingresa al menos 1 persona</div>
               </div>
             </div>
-            <div class="form-group mt-3">
-              <textarea
-                class="form-control"
-                name="message"
-                rows="5"
-                placeholder="Message"
-              ></textarea>
-              <div class="validate"></div>
-            </div>
+
             <div class="mb-3">
-              <div class="loading">Loading</div>
+              <div class="loading">Enviando...</div>
               <div class="error-message"></div>
               <div class="sent-message">
-                Your booking request was sent. We will call back or send an
-                Email to confirm your reservation. Thank you!
+                Tu solicitud de reservación ha sido enviada. Te contactaremos
+                para confirmar. ¡Gracias!
               </div>
             </div>
+
             <div class="text-center">
-              <button type="submit">Book a Table</button>
+              <button type="submit">Reservar Ahora</button>
             </div>
           </form>
         </div>
@@ -1654,51 +1346,58 @@
       <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Nuestra ubicacion</h2>
-            <p>Visitanos</p>
+            <h2>Nuestra Ubicación</h2>
+            <p>Visítanos</p>
           </div>
         </div>
 
         <div class="container" data-aos="fade-up">
           <div class="row mt-5">
+            <!-- Información de contacto -->
             <div class="col-lg-6">
               <div class="info">
                 <div class="address">
                   <i class="bi bi-geo-alt"></i>
-                  <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <h4>Dirección:</h4>
+                  <p>
+                    Atlixcáyotl 1499, Reserva Territorial Atlixcáyotl, Centros
+                    Comerciales Desarrollo Atlixcayotl, 72820 San Bernardino
+                    Tlaxcalancingo, Puebla.
+                  </p>
                 </div>
 
                 <div class="open-hours">
                   <i class="bi bi-clock"></i>
-                  <h4>Open Hours:</h4>
+                  <h4>Horario:</h4>
                   <p>
-                    Monday-Saturday:<br />
-                    11:00 AM - 2300 PM
+                    Lunes - Sábado:<br />
+                    8:00 AM - 12:00 AM
                   </p>
-                </div>
-
-                <div class="email">
-                  <i class="bi bi-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>
+                    Domingo:<br />
+                    9:00 AM - 8:00 PM
+                  </p>
                 </div>
 
                 <div class="phone">
                   <i class="bi bi-phone"></i>
-                  <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
+                  <h4>Teléfono:</h4>
+                  <p>222 225 7123</p>
                 </div>
               </div>
             </div>
 
+            <!-- Mapa -->
             <div class="col-lg-6">
               <div data-aos="fade-up">
                 <iframe
-                  style="border: 0; width: 100%; height: 350px"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                  frameborder="0"
-                  allowfullscreen
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.822878102381!2d-98.23607009999999!3d19.027525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc748b56cefef%3A0x392c13369b932c9c!2sAGUALUMBRE!5e0!3m2!1ses-419!2smx!4v1758398536497!5m2!1ses-419!2smx"
+                  width="100%"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
             </div>
@@ -1714,92 +1413,26 @@
       <div class="footer-top">
         <div class="container">
           <div class="row">
+            <!-- Información y redes sociales -->
             <div class="col-lg-3 col-md-6">
               <div class="footer-info">
-                <h3>Restaurantly</h3>
-                <p>
-                  A108 Adam Street <br />
-                  NY 535022, USA<br /><br />
-                  <strong>Phone:</strong> +1 5589 55488 55<br />
-                  <strong>Email:</strong> info@example.com<br />
-                </p>
+                <h3>AGUALUMBRE</h3>
                 <div class="social-links mt-3">
                   <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                   <a href="#" class="facebook"
-                    ><i class="bx bxl-facebook"></i
+                    ><i class="bx bx-facebook"></i
                   ></a>
                   <a href="#" class="instagram"
-                    ><i class="bx bxl-instagram"></i
+                    ><i class="bx bx-instagram"></i
                   ></a>
                   <a href="#" class="google-plus"
-                    ><i class="bx bxl-skype"></i
+                    ><i class="bx bx-skype"></i
                   ></a>
                   <a href="#" class="linkedin"
-                    ><i class="bx bxl-linkedin"></i
+                    ><i class="bx bx-linkedin"></i
                   ></a>
                 </div>
               </div>
-            </div>
-
-            <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Terms of service</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Privacy policy</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Web Development</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Product Management</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Graphic Design</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Our Newsletter</h4>
-              <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
-              </p>
-              <form action="" method="post">
-                <input type="email" name="email" /><input
-                  type="submit"
-                  value="Subscribe"
-                />
-              </form>
             </div>
           </div>
         </div>
@@ -1807,21 +1440,15 @@
 
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span></span></strong
-          >. All Rights Reserved
+          &copy; 2025 <strong>AGUALUMBRE</strong>. Todos los derechos
+          reservados.
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
-          Designed by <a href="">AlanGS</a>
-        </div>
+        <div class="credits">Diseñado por <a href="#">AlanGS</a></div>
       </div>
     </footer>
     <!-- End Footer -->
 
-    <!-- <div id="preloader"></div> -->
+    <div id="preloader"></div>
     <a
       href="#"
       class="back-to-top d-flex align-items-center justify-content-center"
